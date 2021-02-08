@@ -1,0 +1,39 @@
+.prerogative {
+    min-height: 473px;
+    padding: 70px 0 65px 0;
+    &__different {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__icons {
+        width: 273px;
+        margin-right: 65px;
+        &:last-child {
+            margin-right: 0;
+        }
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #0D0D0D;
+        span {
+            font-weight: 700;
+            font-size: 18px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            
+            }
+        }
+    .heartpulse {
+        animation: heartpulse 3s ease-in-out infinite;
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
+    
+}

@@ -1,0 +1,33 @@
+@import "libs/animate.min";
+@import "libs/bootstrap-reboot.min";
+@import "libs/slick";
+
+* {
+    font-family: 'Museo Sans', sans-serif;
+}
+
+.container {
+    width: 950px;
+    margin: 0 auto;
+}
+
+@import "base/variables";
+@import "base/animations";
+
+
+
+
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/buttons";
+@import "blocks/prerogative";
+@import "blocks/title";
+@import "blocks/feed-forms";
+@import "blocks/slider";
+@import "blocks/catalog";
+@import "blocks/comments";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/scroll";
+
+@import "base/media";

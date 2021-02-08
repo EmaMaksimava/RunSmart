@@ -1,0 +1,192 @@
+.catalog {
+    padding-bottom: 80px;
+    &__tabs {
+        margin-top: 46px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    &__tab {
+        margin: 0 5px;
+        width: 222px;
+        height: 52px;
+        background: rgba(0, 0, 0, 0.0001);
+        border: 2px solid #D0D0D0;
+        font-size: 18px;
+        line-height: 49px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #6B6B6B;
+        transform: skewX(-25deg);
+        border: 2px solid #D0D0D0;
+        transition: 0.5s all;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 2px 2px 20px $main-color;
+            border:none;
+        }
+        div {
+            transform: skewX(25deg);
+        }
+        &_active {
+            color: #FFFFFF;
+            background-color: $main-color;
+            border: none;
+
+        }
+    }
+    &__content {
+        margin-top: 57px;
+        display: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &_active {
+            display: flex;
+        }
+
+    }
+    &__item {
+        margin: 10px 8px;
+        padding: 20px;
+        width: 300px;
+        height: 442px;
+        background: #FFFFFF;
+        border: 2px solid #E8E8E8;
+        box-sizing: border-box;
+        overflow: hidden;
+        hr {
+            height: 2px;
+            background: #E8E8E8;
+            margin-top: 17px;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        width: calc(200% + 40px);
+    }
+    &__contents {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 0px;
+        transform: translateX(-100%);
+        transition: 0.5s all;
+        &_active {
+            transform: translateX(0%);
+            margin-right: 20px;
+        }
+    }
+    &__list {
+        position: relative;
+        width: 50%;
+        margin-left: 20px;
+        transform: translateX(0%);
+        padding-right: 20px;
+        transition: 0.5s all;
+        padding-left: 19px;
+        margin-bottom: 0px;
+        list-style-type: none;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        color: #555555;
+        li {
+            margin-bottom: 15px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                background-color: $main-color;
+                left: -15px;
+                top: 7px;
+            }
+        }
+        
+
+        &_active {
+            transform: translateX(-100%);
+            margin-left: 0px;
+        }
+    }
+    &__img {
+        display: block;
+        max-width: 140px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        color: #0D0D0D;
+        margin: 15px auto;
+    }
+    &__descr {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #0D0D0D;
+        margin-bottom: 10px;
+    }
+    &__link {
+        display: block;
+        margin: 0 auto;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration-line: underline;
+        color: $main-color;
+        &:hover {
+            color: $main-color;
+            font-weight: 700;
+        }
+    }
+    &__footer {
+        margin-top: 17px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    &__prices {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__old-price {
+        font-weight: 300;
+        font-size: 14px;
+        text-decoration-line: line-through;
+        color: #555555;
+    }
+    &__price {
+        font-weight: 700;
+        font-size: 20px;
+        color: #050505;
+    }
+    &__back {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 40px);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration-line: underline;
+        color: $main-color;
+        &:hover {
+            color: $main-color;
+            font-weight: 700;
+        }
+    }
+   
+}

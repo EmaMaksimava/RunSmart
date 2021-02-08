@@ -1,0 +1,43 @@
+.comments {
+    padding-bottom: 48px;
+    &__content {
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__users {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__img {
+        width: 169px;
+        height: 169px;
+        margin-right: 60px;
+    }
+    &__text {
+        width:680px;
+        text-align: left;
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 5px;
+        color: #0D0D0D;
+    }
+    &__maraphon {
+        font-weight: 500;
+        font-size: 14px;
+        color: #646464;
+    }
+    &__info {
+        margin-top: 10px;
+        font-weight: 300;
+        font-size: 16px;
+        color: #0D0D0D;
+    }
+}

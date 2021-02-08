@@ -1,0 +1,36 @@
+.button {
+    width: 153px;
+    height: 32px;
+    background: $main-color;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    &_main {
+        width: 303px;
+        height: 54px;
+        font-size: 16px;
+    }
+    &_submit {
+        width: 303px;
+        height: 58px;
+        font-size: 16px;
+    }
+    &__mini {
+        width: 135px;
+        height: 44px;
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    &:hover {
+        color:rgb(201, 247, 129);
+        box-shadow: 2px 2px 10px $main-color;
+        border: 2px solid rgb(146, 11, 6);
+    }
+    &:active {
+        background:rgb(100, 6, 3);
+    }
+}
